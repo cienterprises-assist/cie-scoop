@@ -6,6 +6,6 @@
 "hash" : "7D10DCAD458FE3F02B2562DCAD9E2D69F622DA446C0AA1D9062E25D0C9B880A2",
 "bin": ["testblob.vbs", "wscript"],
 "post_install": [
-          "Start-Process -FilePath 'wscript' -ArgumentList '//NoLogo C:\\Users\Adminis_bac\\scoop\apps\\testblob\\current\\testblob.vbs' -wait"
+          "Start-Process -FilePath 'wscript' -ArgumentList '//NoLogo C:\\Users\\Adminis_bac\\scoop\\apps\\testblob\\current\\testblob.vbs' -wait"
  ]
 }
