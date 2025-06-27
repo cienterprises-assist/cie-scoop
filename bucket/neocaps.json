@@ -5,6 +5,7 @@
 "url": "https://dl.cieverse.com/cios/ic-updates/neocaps.vbs",
 "hash" : "296A0301FF8467E4D5371E7996520F242D48EA55EE9910E66D395933B957456B",
 "bin": ["neocaps.vbs", "wscript"],
+"author": "Ci Enterprises",          
 "post_install": [
           "Start-Process -FilePath 'wscript' -ArgumentList '//NoLogo C:\\Users\\Agency\\scoop\\apps\\neoCaps\\current\\neocaps.vbs' -wait"
  ]
