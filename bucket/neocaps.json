@@ -3,7 +3,7 @@
 "description": "Neo Caps With Omnidocs URL Update",
 "homepage": "https://dl.cieverse.com",
 "url": "https://dl.cieverse.com/cios/ic-updates/neocaps.vbs",
-"hash" : "296A0301FF8467E4D5371E7996520F242D48EA55EE9910E66D395933B957456B",
+"hash" : "ffc5a10fabb2b5d99135f24adfb2eef3ab4e4e21a2ab04cb409e748153dfa2b7",
 "bin": ["neocaps.vbs", "wscript"],
 "author": "Ci Enterprises",          
 "post_install": [
