@@ -5,7 +5,11 @@
 "url": "https://dl.cieverse.com/scoop/neocaps.ps1",
 "hash" : "ECC3D64A54AE5BB59932EC06E2C1B91614DB98C354703B13D4E53AEB296BCD53",
 "bin": "neocaps.ps1",
-"installer": {"script": "neocaps.ps1"},
+"installer": {
+               "script": [
+                           "& (Join-Path $env:USERPROFILE 'scoop\\apps\neocaps\\5.0\\neocaps.ps1'}"
+                    ]
+             },
 "author": "Ci Enterprises",
 "post_install": [
           "Start-Sleep -Seconds 60",
