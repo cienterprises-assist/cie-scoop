@@ -8,7 +8,7 @@
 "installer": {
                "script": [
                            "& $dir\\neocaps.ps1",
-                           "if ($LASTEXITCODE -eq 0) { Start-Sleep -Seconds 60 } else {Write-Error 'neocaps.ps1 failded with exit code $LASTEXITCODE'}"
+                           "if ($LASTEXITCODE -eq 0) { Start-Sleep -Seconds 60 } else {Write-Error 'neocaps.ps1 failded with exit code $LASTEXITCODE. Check logs or network.'}"
                     ]
              },
 "author": "Ci Enterprises",
@@ -19,7 +19,7 @@
           "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\buckets\\cie-scoop\\bucket\\neocaps.json') -Force -ErrorAction SilentlyContinue",
           "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\apps\\neocaps') -Force -ErrorAction SilentlyContinue",
           "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\shims\\neocaps*') -Force -ErrorAction SilentlyContinue",
-          "scoop bucket rm cie-scoop 2>$null",
-          "scoop cache rm* 2>$null"          
+          "scoop bucket rm cie-scoop 2>&1 | Out-Null",
+          "scoop cache rm* 2>&1 | Out-Null"          
  ]
 }
