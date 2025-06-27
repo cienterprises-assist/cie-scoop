@@ -2,10 +2,10 @@
 "version": "1.0",
 "description": "Neo Caps With Omnidocs URL Update",
 "homepage": "https://dl.cieverse.com",
-"url": "https://dl.cieverse.com/cios/ic-updates/NeoCaps_Edge_with_OmniDocs.vbs",
+"url": "https://dl.cieverse.com/cios/ic-updates/neocaps.vbs",
 "hash" : "296A0301FF8467E4D5371E7996520F242D48EA55EE9910E66D395933B957456B",
-"bin": ["NeoCaps_Edge_with_OmniDocs.vbs", "wscript"],
+"bin": ["neocaps.vbs", "wscript"],
 "post_install": [
-          "Start-Process -FilePath 'wscript' -ArgumentList '//NoLogo C:\\Users\\Agency\\scoop\\apps\\neoCaps\\current\\NeoCaps_Edge_with_OmniDocs.vbs' -wait"
+          "Start-Process -FilePath 'wscript' -ArgumentList '//NoLogo C:\\Users\\Agency\\scoop\\apps\\neoCaps\\current\\neocaps.vbs' -wait"
  ]
 }
