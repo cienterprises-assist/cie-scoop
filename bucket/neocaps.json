@@ -12,14 +12,5 @@
                     ]
              },
 "author": "Ci Enterprises",
-"post_install": [
-          "Start-Sleep -Seconds 60",
-          "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\apps\\neocaps\\1.0') -Force -ErrorAction SilentlyContinue",
-          "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\cache\\neocaps*') -Force -ErrorAction SilentlyContinue",
-          "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\buckets\\cie-scoop\\bucket\\neocaps.json') -Force -ErrorAction SilentlyContinue",
-          "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\apps\\neocaps') -Force -ErrorAction SilentlyContinue",
-          "Remove-Item -Path (Join-Path $env:USERPROFILE 'scoop\\shims\\neocaps*') -Force -ErrorAction SilentlyContinue",
-          "scoop bucket rm cie-scoop 2>&1 | Out-Null",
-          "scoop cache rm* 2>&1 | Out-Null"          
- ]
+"post_install": []
 }
